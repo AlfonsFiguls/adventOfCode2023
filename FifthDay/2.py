@@ -1,5 +1,4 @@
 import re
-import numpy as np
 
 def getInitialMaps(e):
     maps =  [m.group(1).strip() for m in re.finditer(r"^([\d \n]+)$", e, re.MULTILINE)]
